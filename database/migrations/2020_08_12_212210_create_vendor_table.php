@@ -13,7 +13,7 @@ class CreateVendorTable extends Migration
      */
     public function up()
     {
-        Schema::create('vendor', function (Blueprint $table) {
+        Schema::create('vendors', function (Blueprint $table) {
             $table->foreignId('user_id');
             $table->timestamps();
         });

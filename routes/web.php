@@ -21,6 +21,8 @@ Route::get('/profile', 'ProfileController@profile');
 
 Route::post('/profile/modify', 'ProfileController@modify');
 
+Route::get('/myproducts', 'ProductController@index');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
