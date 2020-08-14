@@ -23,6 +23,7 @@ Route::post('/profile/modify', 'ProfileController@modify');
 
 Route::get('/products', 'ProductController@index');
 
+Route::get('/products/{id}/edit', 'ProductController@edit');
 
 Auth::routes();
 
