@@ -59,6 +59,11 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Pénztár</a>
                             </li>
+                            @if ( $vendor )
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/products">Termékek</a>
+                                </li>
+                            @endif
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->lastname.' '.Auth::user()->firstname }} <span class="caret"></span>

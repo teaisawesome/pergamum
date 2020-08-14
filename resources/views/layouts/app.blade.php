@@ -59,9 +59,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Pénztár</a>
                             </li>
-                            @if ($vendor)
+                            @if ( $vendor )
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Termékeim</a>
+                                    <a class="nav-link" href="/products">Termékek</a>
                                 </li>
                             @endif
                             <li class="nav-item dropdown">

@@ -21,7 +21,8 @@ Route::get('/profile', 'ProfileController@profile');
 
 Route::post('/profile/modify', 'ProfileController@modify');
 
-Route::get('/myproducts', 'ProductController@index');
+Route::get('/products', 'ProductController@index');
+
 
 Auth::routes();
 
