@@ -4,7 +4,7 @@
 @section('products')
     <div class="row">
         <div class="col-md-6"><h1>Termékek</h1></div>
-        <div class="col-md-6 text-right"><a href="#" class="btn btn-info">+ Új termék hozzáadása</a></div>
+        <div class="col-md-6 text-right"><a href="products/create" class="btn btn-info">+ Új termék hozzáadása</a></div>
     </div>
     <hr>
     @forelse ($products as $product)

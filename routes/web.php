@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Vendor;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,9 +22,13 @@ Route::get('/profile', 'ProfileController@profile');
 
 Route::post('/profile/modify', 'ProfileController@modify');
 
+
 Route::get('/products', 'ProductController@index');
 
 Route::get('/products/{id}/edit', 'ProductController@edit');
+
+Route::get('/products/create', 'ProductController@create');
+
 
 Auth::routes();
 

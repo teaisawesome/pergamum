@@ -41,4 +41,18 @@ class ProductController extends Controller
             return redirect()->back();
         }
     }
+
+    public function create()
+    {
+        $isVendor = Vendor::where('user_id', Auth::id())->exists();
+
+        if( $isVendor )
+        {
+            return view("createproduct");
+        }
+        else
+        {
+            return redirect()->back();
+        }
+    }
 }

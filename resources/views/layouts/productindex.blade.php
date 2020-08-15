@@ -87,9 +87,10 @@
             </div>
         </nav>
 
-        <div class="container product-container mt-3 p-5">
+        <div class="container product-container mt-3 mb-3 py-5">
             @yield('products')
             @yield('edit')
+            @yield('create')
         </div>
         
     </body>

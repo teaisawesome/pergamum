@@ -41,6 +41,17 @@
     background-color: #a79990;
     color: whitesmoke;
 }
+.product-create-btn
+{
+    background-color: #a79990;
+    color: whitesmoke;
+}
+.create-file-input
+{
+    background-color: #a79990;
+    padding: 0.5rem;
+    color: whitesmoke;
+}
 .product-container
 {
     background-color: whitesmoke;
