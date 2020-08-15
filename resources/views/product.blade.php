@@ -10,7 +10,7 @@
     @forelse ($products as $product)
     <div class="row mb-5">
         <div class="col-md-4 text-right">
-            <img src="{{asset('/storage/ProductImages/5404631_3.jpg')}}" alt="kep" width="auto" height="200">
+            <img src="{{asset('/storage/ProductImages/'.$product->image)}}" alt="kep" width="auto" height="200">
         </div>
         <div  class="col-md-8">
             <h3 class="font-weight-bold">{{ $product->title }}</h3>

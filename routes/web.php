@@ -29,6 +29,7 @@ Route::get('/products/{id}/edit', 'ProductController@edit');
 
 Route::get('/products/create', 'ProductController@create');
 
+Route::post('/products/createbook', 'ProductController@createNewBook');
 
 Auth::routes();
 

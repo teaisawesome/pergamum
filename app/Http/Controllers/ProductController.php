@@ -55,4 +55,29 @@ class ProductController extends Controller
             return redirect()->back();
         }
     }
+
+    public function createNewBook(Request $request)
+    {
+        
+        $filename = $request->image->getClientOriginalName();
+
+        # store image in storage/app/public/ProductImages
+        $request->image->storeAs('ProductImages', $filename, 'public');
+
+        $book = [
+            'title' => $request->title,
+            'author' => $request->author,
+            'description' => $request->description,
+            'theme' => $request->theme,
+            'publisher' => $request->publisher,
+            'isbn' => $request->isbn,
+            'language' => $request->language,
+            'release_year'=> $request->release_year,
+            'image' => $filename
+        ];
+        
+        Product::insert($book);
+
+        return redirect()->back();
+    }
 }

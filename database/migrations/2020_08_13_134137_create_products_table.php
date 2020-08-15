@@ -18,9 +18,10 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('author');
-            $table->string('description');
+            $table->longText('description');
+            $table->string('theme');
             $table->string('publisher');
-            $table->integer('isbn');
+            $table->string('isbn');
             $table->string('language');
             $table->year('release_year');
             $table->string('image');
